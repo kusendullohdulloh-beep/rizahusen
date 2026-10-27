@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tentang Saya - Riza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="riza.jpg">
+</head>
+<body>
+<div class="navbar-cv">
+  <a href="index.html">CV UTAMA</a>
+  <a href="profile.html">PROFILE LENGKAP</a>
+  <a href="education.html">PENDIDIKAN</a>
+  <a href="about-me.html">TENTANG SAYA</a>
+  <a href="hobies.html">KEAHLIAN</a>
+  <a href="foto.html">GALERI FOTO</a>
+</div>
+<div class="cv-wrapper">
+  <div class="sidebar">
+    <h2>KEPRIBADIAN</h2>
+    <p>• Jujur & Bertanggung Jawab<br>• Disiplin & Tepat Waktu<br>• Mudah Beradaptasi<br>• Mampu Bekerja Tim<br>• Mau Belajar Hal Baru</p>
+    <h2>MOTIVASI</h2>
+    <p>Ingin mengembangkan karir di dunia IT dan memberikan kontribusi terbaik bagi perusahaan.</p>
+  </div>
+  <div class="main">
+    <h1>TENTANG SAYA</h1>
+    <div class="job-title">Surat Pengantar / Cover Letter Singkat</div>
+    
+    <div class="section-title">Perihal: TUGAS WEB </div>
+    <div class="info-box">
+      Dengan hormat,<br><br>
+      Saya yang bertanda tangan di bawah ini:<br>
+      Nama: <b>Riza Husen Abdullah</b><br>
+      NIM: 2611700017<br>
+      Jurusan: Sistem Informasi - Universitas Mandiri Subang<br>
+      <b>Riza Husen Abdullah</b>
+    </div>
+  </div>
+</div>
+<script>
+const nb=document.getElementById('navbarCv');
+const ov=document.getElementById('overlay');
+const wrap=document.querySelector('.cv-wrapper');
+document.getElementById('hamburger').onclick=()=>{
+  nb.classList.toggle('hide'); nb.classList.toggle('show');
+  ov.classList.toggle('show'); wrap.classList.toggle('full');
+};
+ov.onclick=()=>{
+  nb.classList.add('hide'); nb.classList.remove('show');
+  ov.classList.remove('show'); wrap.classList.add('full');
+};
+if(window.innerWidth<=768){ nb.classList.add('hide'); wrap.classList.add('full'); }
+</script>
+</body>
+</html>

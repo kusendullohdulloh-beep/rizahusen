@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CV - Riza Husen Abdullah</title>
+   <meta property="og:title" content="cv riza ">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kusendullohdulloh-beep.github.io/latihan/riza.jpg">
+  <meta property="og:url" content="https://kusendullohdulloh-beep.github.io/latihan/">
+  <meta property="og:description" content="Halo, saya riza. Ini adalah website CV saya, klik untuk lihat foto-foto saya.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/jpeg" href="riza.jpg">
+</head>
+<body>
+  <button id="hamburger">☰</button>
+<div id="overlay"></div>
+<div class="navbar-cv" id="navbarCv">
+  <a href="index.html">CV UTAMA</a>
+  <a href="profile.html">PROFILE LENGKAP</a>
+  <a href="education.html">PENDIDIKAN</a>
+  <a href="about-me.html">TENTANG SAYA</a>
+  <a href="hobies.html">KEAHLIAN</a>
+  <a href="foto.html">GALERI FOTO</a>
+</div>
+<div class="cv-wrapper">
+  <div class="sidebar">
+    <img src="riza.jpg" class="foto-cv">
+    <h2>KONTAK</h2>
+    <p>📞 083827415793<br>📧 Kusendullohdulloh@email.com<br>📍 Subang, Jawa Barat<br>🔗  Kusendullohdullh/github.com/riza</p>
+    <h2>KEAHLIAN</h2>
+    <ul><li>• HTML, CSS</li><li>• Sistem Informasi</li><li>• Microsoft Office</li><li>• Analisis Data</li><li>• Manajemen Database</li></ul>
+    <h2>BAHASA</h2>
+    <p>Indonesia - Fasih<br>Inggris - Menengah</p>
+  </div>
+  <div class="main">
+    <h1>RIZA HUSEN ABDULLAH</h1>
+    <div class="job-title">Mahasiswa Sistem Informasi | NIM 2611700017</div>
+    
+    <div class="section-title">Ringkasan Profil</div>
+    <div class="info-box"><b>PROFIL SINGKAT</b><br>
+Lulusan SMK Terpadu Diponegoro Subang, jurusan RPL, dengan pengalaman kerja sebagai Operator Produksi yang bertugas mengoperasikan mesin dan peralatan di pabrik atau fasilitas manufaktur untuk menghasilkan produk jadi atau setengah jadi. Terampil dalam komunikasi dan manajemen waktu. Mampu bekerja dalam tim dan beradaptasi dengan cepat dalam lingkungan kerja yang dinamis.</div>
+   
+    <div class="section-title">Pendidikan</div>
+    <div class="info-box"><b>Universitas Mandiri Subang</b> - S1 Sistem Informasi<br>NIM: 2611700017 | 2024 - Sekarang<br>IPK: (500)
+    <br><b>Smk Terpadu Di Ponegoro </b>- REAKAYASA PERANGKAT LUNAK (RPL)<br>2020 - 2023<br><b>MTS Nurunnisa</b><br>2017 - 2020<br><b>MI DARURROHMAH</b><br>2011 - 2017</div>
+    
+    <div class="section-title">Pengalaman kerja</div>
+    <div class="info-box"><b>PT Alfa Gemilang Makmur</b><br>Karyawan
+Bertugas mengoperasikan mesin dan packing barang.<br><b>Restoran</b><br>- Waiter
+Melayani tamu mulai dari menyambut hingga mengantar pesanan, memastikan kepuasan pelanggan, dan menjaga kebersihan area makan.<br><b>Toko Grosir</b><br>Pramuniaga
+Bertugas membersihkan dan membereskan barang penjualan serta mengirim barang penjualan kepada konsumen/pembeli.<br><b>Gudang J&T Express </b><br>Staff Gudang
+Menyortir paket, bongkar muat barang, dan memproses pengiriman<br><b>Gudang Shopee </b><br>Staff Gudang
+Bongkar dan muat barang, serta menyortir barang paket.<br><b>PT.TRI ECXELA HARMONY</b><br>>Bertugas mengoperasikan mesin</div>
+    
+    <div class="section-title">Tujuan Karir</div>
+    <div class="info-box">Ingin berkontribusi sebagai Staff IT / Web Developer yang profesional dan dapat diandalkan.</div>
+  </div>
+</div>
+<script>
+const nb=document.getElementById('navbarCv');
+const ov=document.getElementById('overlay');
+const wrap=document.querySelector('.cv-wrapper');
+document.getElementById('hamburger').onclick=()=>{
+  nb.classList.toggle('hide'); nb.classList.toggle('show');
+  ov.classList.toggle('show'); wrap.classList.toggle('full');
+};
+ov.onclick=()=>{
+  nb.classList.add('hide'); nb.classList.remove('show');
+  ov.classList.remove('show'); wrap.classList.add('full');
+};
+if(window.innerWidth<=768){ nb.classList.add('hide'); wrap.classList.add('full'); }
+</script>
+</body>
+</html>

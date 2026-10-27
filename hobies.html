@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><title>Keahlian - Riza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="riza.jpg">
+</head>
+<body>
+ <button id="hamburger">☰</button>
+<div id="overlay"></div>
+<div class="navbar-cv" id="navbarCv">
+  <a href="index.html">CV UTAMA</a>
+  <a href="profile.html">PROFILE LENGKAP</a>
+  <a href="education.html">PENDIDIKAN</a>
+  <a href="about-me.html">TENTANG SAYA</a>
+  <a href="hobies.html">KEAHLIAN</a>
+  <a href="foto.html">GALERI FOTO</a>
+</div>
+<div class="cv-wrapper">
+  <div class="sidebar">
+    <h2>SKILL UTAMA</h2>
+    <p>HTML/CSS - 85%<br>Ms. Office - 90%<br>Basis Data - 75%<br>Analisis Sistem - 80%</p>
+    <h2>SERTIFIKAT</h2>
+    <p>• Sertifikat Komputer<br>• Sertifikat Pelatihan (jika ada)<br>• Sertifikat Organisasi</p>
+  </div>
+  <div class="main">
+    <h1>KEAHLIAN & HOBI</h1>
+    <div class="job-title">Kompetensi Riza Husen Abdullah</div>
+    
+    <div class="section-title">Hard Skills</div>
+    <div class="info-box">
+      ✓ <b>Web Development:</b> HTML, CSS, Dasar JavaScript<br>
+      ✓ <b>Database:</b> MySQL, Konsep Basis Data<br>
+      ✓ <b>Office:</b> Word, Excel, PowerPoint (Mahir)<br>
+      ✓ <b>Sistem Informasi:</b> Analisis Sistem, Flowchart, DFD<br>
+      ✓ <b>Desain:</b> Canva, Figma Dasar
+    </div>
+
+    <div class="section-title">Soft Skills</div>
+    <div class="info-box">
+      ✓ Komunikasi Baik<br>
+      ✓ Kerja Sama Tim<br>
+      ✓ Manajemen Waktu<br>
+      ✓ Problem Solving<br>
+      ✓ Teliti dan Detail
+    </div>
+
+    <div class="section-title">Hobi Yang Relevan Dengan Pekerjaan</div>
+    <div class="info-box">
+      • Belajar teknologi & coding<br>
+      • Membaca artikel IT<br>
+      • Mengutak-atik komputer<br>
+      • Desain & editing ringan
+    </div>
+  </div>
+</div>
+<script>
+const nb=document.getElementById('navbarCv');
+const ov=document.getElementById('overlay');
+const wrap=document.querySelector('.cv-wrapper');
+document.getElementById('hamburger').onclick=()=>{
+  nb.classList.toggle('hide'); nb.classList.toggle('show');
+  ov.classList.toggle('show'); wrap.classList.toggle('full');
+};
+ov.onclick=()=>{
+  nb.classList.add('hide'); nb.classList.remove('show');
+  ov.classList.remove('show'); wrap.classList.add('full');
+};
+if(window.innerWidth<=768){ nb.classList.add('hide'); wrap.classList.add('full'); }
+</script>
+</body>
+</html>
